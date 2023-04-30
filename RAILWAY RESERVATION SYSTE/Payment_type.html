@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Payment</title>
+<style>
+*{
+font-family: 'Poppins', sans-serif; margin:0;
+padding:0;
+box-sizing: border-box; text-decoration: none; outline: none; border:none;
+text-transform: capitalize;
+transition: all .3s cubic-bezier(.38,1.15,.7,1.12); border-radius: 5px;
+}
+body{
+display: flex; background-size:cover; justify-content: center; 
+align-items: center; height: 100vh; margin: 0;
+}
+.row
+{
+background-color: rgb(248, 248, 248); border-radius: 5px;
+width: 500px;}
+.col-50{
+border-bottom: 1px solid white; background-color: #f7f7f7; padding: 10px 10px;
+}
+.col-50 h3{ margin: 0;
+text-align: center;
+}
+.form-control
+{
+margin-bottom: 5px; padding-bottom: 5px;
+}
+.but{
+background-color: rgb(171, 154, 154); border: none;
+color: rgb(0, 0, 0); display: block; font-size: 15px; width: 25%; margin-top: 10px; 
+padding: 10px;
+
+
+}
+</style>
+</head>
+<body background="train5.jpg">
+<div class="row">
+<div class="col-75">
+<div class="container">
+<form action="/action_page.php">
+<div class="row">
+<div class="col-50">
+<div class="col-50">
+<h3>Payment</h3>
+</div>
+<label for="fname">Accepted Cards</label></div>
+<div class="icon-container">
+<i class="fa fa-cc-visa" style="color:navy;"></i>
+<i class="fa fa-cc-amex" style="color:blue;"></i>
+<i class="fa fa-cc-mastercard" style="color:red;"></i>
+<i class="fa fa-cc-discover" style="color:orange;"></i>
+</div>
+<div class="form-control">
+<label for="cname">Name on Card</label>
+<input type="text" id="cname" name="cardname"></div>
+<div class="form-control">
+<label for="ccnum">Credit card number</label></div>
+<div class="form-control">
+<input type="text" id="ccnum"name="cardnumber"></div>
+<div class="form-control">
+<label for="expmonth">Exp Month</label></div> 
+<div class="form-control">
+<input type="text" id="expmonth" name="expmonth"></div>
+<div class="row">
+<div class="col-50">
+<label for="expyear">Exp Year</label>
+<input type="text" id="expyear" name="expyear" placeholder="2018">
+</div>
+<div class="col-50">
+<label for="cvv">CVV</label>
+<input type="text" id="cvv" name="cvv" placeholder="352">
+</div>
+</div>
+</div>
+</div>
+<button class="but" formaction="confirn.html">Submit</button>
+</form>
+
+
+</body>
+</html>
